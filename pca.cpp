@@ -25,10 +25,10 @@ Eigen::VectorXf PCA::Compute(const Eigen::MatrixXf &data)
 	eigen_vectors.normalize();
 
 	std::sort(eigen_values.derived().data(), eigen_values.derived().data() + eigen_values.derived().size());
-    short index = eigen_values.size() - 1;
-    Eigen::VectorXf feature_vector = eigen_vectors.row(index);
+	short index = eigen_values.size() - 1;
+	Eigen::VectorXf feature_vector = eigen_vectors.row(index);
 
-    return feature_vector;
+	return feature_vector;
 }
 
 PCA::~PCA()
