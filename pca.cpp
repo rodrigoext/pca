@@ -1,5 +1,4 @@
 #include "pca.h"
-#include <iostream>
 
 PCA::PCA()
 {
